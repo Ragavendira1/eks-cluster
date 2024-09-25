@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ values.name | dump }}
+  annotations:
+    github.com/project-slug: Ragavendira1/aws-eks
+    github.com/project-url: https://github.com/Ragavendira1/aws-eks
+    # github.com/project-slug: samgabrail/${{ values.name }}
+  description: ${{ values.name }} running on AWS EKS cluster managed by Terraform
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
